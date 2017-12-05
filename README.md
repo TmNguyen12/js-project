@@ -25,7 +25,7 @@ This project will be implemented with the following technologies:
 - [ ] Display the pricing information in a D3 chart 
   main.js
 
-**Day 2** Learn about and implement the time scale chart
+**Day 2** Add the highlight bubbles to the chart 
 - [ ] Display highlight bubbles in the chart to designate significant moments in time 
 - [ ] Manually compile news information that will be showed in these highlight bubbles 
 timeline.js
