@@ -1,0 +1,92 @@
+/* .chart div {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+} */
+
+/* body { font: 12px Arial;}
+
+path { 
+    stroke: purple;
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis path,
+.axis line {
+    fill: blue;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+
+.focus line {
+  fill: none;
+  stroke: black;
+  stroke-width: 1.5px;
+  stroke-dasharray: 3 3;
+}
+
+.overlay{
+  fill:none;
+}
+
+/* select all */
+/* .line{
+  fill: none, 
+  stroke: steelblue, 
+  'stroke-width': 1.5px;
+} */
+
+/* select */
+/* .overlay{
+  fill: none; 
+  pointer-events: all; 
+}
+
+.focus{
+  opacity: 0.7; 
+}
+
+.focus circle{
+  fill: none; 
+  stroke: black; 
+} */ */
+
+
+ /*  different below  */
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.focus circle {
+  fill: none;
+  stroke: steelblue;
+}

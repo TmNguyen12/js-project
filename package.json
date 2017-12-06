@@ -4,7 +4,8 @@
   "description": "### Background and Overview Bitcoin has had a meteoric rise in media coverage over the last year as well as record breaking increases in value that has never before been seen in modern-day finance. Why is that? What caused it? The bitcoin nexus will provide a time series chart that follows bitcoins price. Users can click on specific dates and will be provided with a display of links and thumnbnails showing news stories that were trending that date, providing unique insight into understanding the trends and forces that influence this cryptocurrencies erratic fluctuations.",
   "main": "index.js",
   "scripts": {
-    "test": "console.log(\"hello\")"
+    "test": "console.log(\"hello\")",
+    "start": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/TmNguyen12/js-project#readme",
   "dependencies": {
+    "d3": "^3.5.17",
     "webpack": "^3.10.0"
   }
 }
