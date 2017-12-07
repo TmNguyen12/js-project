@@ -68,7 +68,30 @@ g.append("path")                  // Add the valueline path
   .attr("stroke-linecap", "round")
   .attr("d", line);
 
+// from Micah Stubb's bl.ocks.org 
+  // const vertical = d3.select(".body")
+  //   .append("div")
+  //   .attr("class", "remove")
+  //   .style("position", "absolute")
+  //   .style("z-index", "19")
+  //   .style("width", "1px")
+  //   .style("height", "380px")
+  //   .style("top", "10px")
+  //   .style("bottom", "30px")
+  //   .style("left", "0px")
+  //   .style("background", "#000");
 
+  // d3.select(".body")
+  //   .on("mousemove", function(){  
+  //     const mousex = d3.mouse(this);
+  //     mousex = mousex[0] + 5;
+  //     vertical.style("left", mousex + "px" ); 
+  //   }) 
+  //   .on("mouseover", function(){  
+  //     const mousex = d3.mouse(this);
+  //     mousex = mousex[0] + 5;
+  //     vertical.style("left", mousex + "px"); 
+  //   }); 
 
 
 
@@ -157,3 +180,24 @@ g.append("path")                  // Add the valueline path
   // }
 
 }); 
+
+
+d3.csv("../docs/BTC_USD_SHORT3.csv", (error, data) 
+
+
+d3.csv("../docs/URLs.csv", (error, data) => {
+  if (error) throw error;
+  
+  let seed = {}; 
+  
+  data.forEach( d => {
+    if (!(d.Key in seed)){
+      seed[d.Key] = [];
+      seed[d.Key].push(d.URLs); 
+    } else {
+      seed[d.Key].push(d.URLs);   
+    }
+  });
+  console.log(seed);
+  return seed; 
+});

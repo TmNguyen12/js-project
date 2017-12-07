@@ -22,7 +22,11 @@
   },
   "homepage": "https://github.com/TmNguyen12/js-project#readme",
   "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2017": "^6.24.1",
     "d3": "^3.5.17",
+    "d3-queue": "^3.0.7",
     "webpack": "^3.10.0"
   }
 }
