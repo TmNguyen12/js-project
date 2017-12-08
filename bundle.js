@@ -92,7 +92,7 @@ const yAxis = d3.svg.axis().scale(y).orient("left");
 // Define the line 
 const line = d3.svg.line().x(d => x(d.date)).y(d => y(d.price));
 
-d3.csv("../docs/URLs2.csv", (error, data) => {
+d3.csv("./URLs2.csv", (error, data) => {
   if (error) throw error;
 
   var seed = {};
@@ -114,7 +114,7 @@ d3.csv("../docs/URLs2.csv", (error, data) => {
   window.seed = seed;
 });
 
-d3.csv("../docs/BTC_USD_SHORT3.csv", (error, data) => {
+d3.csv("./BTC_USD_SHORT3.csv", (error, data) => {
   if (error) throw error;
 
   data.forEach(d => {
