@@ -172,8 +172,8 @@ body {
 
 .line {
   fill: none;
-  stroke: #2283c9;
-  stroke-width: 1.5px;
+  stroke: #6495ED;
+  stroke-width: 3px;
 }
 
 .overlay {
@@ -193,8 +193,8 @@ div.tooltip {
   height: 28px;
   padding: 5px;
   font: 14px sans-serif;
-  bottom: 10px; 
-  right: 8px; 
+  bottom: 100px; 
+  right: 80px; 
   background: #87CEFA;
   border: 0px;
   border-radius: 5px;
@@ -203,7 +203,7 @@ div.tooltip {
 }
 
 circle{
-  fill: #225fc9; 
+  fill: rgb(20, 34, 233); 
 }
 
 .thumb-list{

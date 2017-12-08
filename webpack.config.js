@@ -7,18 +7,6 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    rules: [{
-      test: /\.scss$/,
-      use: extractSass.extract({
-          use: [{
-              loader: "css-loader"
-          }, {
-              loader: "sass-loader"
-          }],
-          // use style-loader in development
-          fallback: "style-loader"
-      })
-  }],
     loaders: [
       {
         test: /\.jsx?$/,
