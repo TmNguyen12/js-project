@@ -1,67 +1,161 @@
-/* .chart div {
-  font: 10px sans-serif;
-  background-color: #2283c9;
-  text-align: right;
-  padding: 3px;
-  margin: 1px;
-  color: white;
-} */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-/* body { font: 12px Arial;}
-
-path { 
-    stroke: purple;
-    stroke-width: 2;
-    fill: none;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+	box-sizing: border box; 
+	-webkit-font-smoothing: antialiased;
+}
+label,
+select,
+textarea
+{
+	&:focus {
+		outline: none;
+	}
+	margin:0;
+	border:0;
+	padding:0;
+	display:inline-block;
+	vertical-align:middle;
+	white-space:normal;
+	background:none;
+	line-height:1;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	/* Browsers have different default form fonts */
+	font-size: 14px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
 
-.axis path,
-.axis line {
-    fill: blue;
-    stroke: grey;
-    stroke-width: 1;
-    shape-rendering: crispEdges;
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+button {
+  /*
+  Get rid of native styling. Read more here:
+  http://css-tricks.com/almanac/properties/a/appearance/
+	*/
+	pointer: cursor; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+	appearance: none;
+    background: $blue; 
+    border: 1px solid transparent; 
+    border-radius: 50px; 
+    display: block;
+    text-shadow:none;
+    transition-duration: 300ms;
+    transition-property: background, color, border; 
+    transition-timing-function: linear; 
+    vertical-align: top; 
+		user-select: none; 
+		color: $white; 
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-
-.focus line {
-  fill: none;
-  stroke: black;
-  stroke-width: 1.5px;
-  stroke-dasharray: 3 3;
+#user-icon{
+	object-fit: cover;
+	border-radius:50%;
+	width: 35px;
+	height: 35px; 
 }
 
-.overlay{
-  fill:none;
+.ReactModal__Body--open {
+	overflow: hidden;
 }
 
-/* select all */
-/* .line{
-  fill: none, 
-  stroke: #2283c9, 
-  'stroke-width': 1.5px;
-} */
-
-/* select */
-/* .overlay{
-  fill: none; 
-  pointer-events: all; 
+.pointer{
+	cursor: pointer;
 }
 
-.focus{
-  opacity: 0.7; 
+input{
+	&:focus {
+		outline: none;
+	}
+  padding: 10px; 
+  margin: 15px 10px;
+  background: $gray-line;
+  border: 1px solid transparent; 
+  transition: border-color 300ms; 
+  &:hover {
+    border: 1px solid lightblue;
+  }
+  &:focus {
+    background: $offwhite;
+    border: 1px solid rgb(47, 120, 202);
+  }
 }
 
-.focus circle{
-  fill: none; 
-  stroke: black; 
-} */ */
-
-
- /*  different below  */
 
 body {
   font: 10px sans-serif;
+  display: flex; 
+  background: #f9f9f9;
+  /* background: white; */
+}
+
+.chart{
+  position: absolute; 
+  top: 8%; 
+  height: 600px; 
+  width: 600px;
+  display: flex;
+  flex-direction: column; 
+  box-sizing: border-box; 
+  background-color: white; 
+  box-shadow: 0 2px 1px rgba(25,25,25,0.2); 
+}
+
+.chart p{
+  font-size: 36px; 
+  align-self: center; 
 }
 
 .axis path,
@@ -107,4 +201,46 @@ div.tooltip {
 
 circle{
   fill: #225fc9; 
+}
+
+.thumb-list{
+  display: flex; 
+  width: 95%;
+  justify-content: flex-end;
+  padding-bottom: 40px;  
+}
+
+.thumb-list > a {
+  width: 45%;
+  padding-right: 15px; 
+}
+
+img{
+  /* width: 250px; */
+  height: 150px;
+  padding-bottom: 40px;
+}
+
+.thumb-list > a > img {
+  width: 100%;
+}
+
+svg {
+  position: absolute; 
+  top: 8%;
+  left: 35%; 
+  background: white; 
+}
+
+ul{
+  align-self: center; 
+  width: 100%; 
+  display: flex; 
+  flex-direction: column; 
+  padding-top: 31px; 
+}
+
+h3{
+  font-size: 19px; 
+  text-decoration: none; 
 }
