@@ -1,5 +1,5 @@
 ## Bitcoin Nexus  
-![live](https://tmnguyen12.github.io/js-project/)
+[live](https://tmnguyen12.github.io/js-project/)
 
 ### Background and Overview
 Bitcoin has had a meteoric rise in media coverage over the last year as well as record breaking increases in value that has never before been seen in modern-day finance. Why is that? What caused it? The bitcoin nexus will provide a time series chart that follows bitcoins price. Users will be able to click on specific moments in time that had significant influence into the changes in bitcoin price. 
